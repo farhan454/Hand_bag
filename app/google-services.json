@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "256562306852",
+    "project_id": "hand-bag-d381a",
+    "storage_bucket": "hand-bag-d381a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256562306852:android:ba7bda01590839e7211db1",
+        "android_client_info": {
+          "package_name": "com.example.hand_bag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256562306852-uco8uhmh498unocddioahclr0b7000nv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8PziYTbaR7stPMXv1-vJVF3hF8pCvN-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256562306852-uco8uhmh498unocddioahclr0b7000nv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

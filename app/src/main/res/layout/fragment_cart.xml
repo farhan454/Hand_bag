@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RL_layout"
+    tools:context=".AddToCartActivity">
+    <RelativeLayout
+        android:id="@+id/top_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:text="Cart"
+            android:textColor="@color/new_purple"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/top_relative_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="500dp">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/women_bag_1"/>
+                <TextView
+                    android:id="@+id/txt_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/img1"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/txt_des"
+                    android:layout_below="@+id/txt_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag quality checker"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/items"
+                    android:layout_below="@+id/txt_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="total items : 33"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img1"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/txt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="$333"
+                    android:textColor="@color/new_purple"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/shirt_3"/>
+                <TextView
+                    android:id="@+id/txt_main2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion Shirts"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/img2"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/txt_des2"
+                    android:layout_below="@+id/txt_main2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag quality checker"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img2"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:layout_below="@+id/txt_des2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag quar"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img2"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/txt_prize2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="$333"
+                    android:textColor="@color/new_purple"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/shoes3"/>
+                <TextView
+                    android:id="@+id/txt_main3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion Shoes"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/img3"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/txt_des3"
+                    android:layout_below="@+id/txt_main3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag quality checker"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img3"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:layout_below="@+id/txt_des3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag quar"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img3"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/txt_prize3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="$333"
+                    android:textColor="@color/new_purple"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/pants"/>
+                <TextView
+                    android:id="@+id/txt_main4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion Pant"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/img4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/txt_des4"
+                    android:layout_below="@+id/txt_main4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag quality checker"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img4"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:layout_below="@+id/txt_des4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion bag quar"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/img4"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/txt_prize4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="$333"
+                    android:textColor="@color/new_purple"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="#EAF2FF"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/txt_botm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price  of bags"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_below="@+id/txt_botm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$333"
+            android:textStyle="bold"
+            android:textColor="@color/new_purple"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/buy_now"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_bg_purple"
+            android:text="Buy Now"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,594 @@
+<LinearLayout
+    android:id="@+id/main_gesture_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/slide_card_view"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.08"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/with_out_sliding_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp16"
+                android:background="@drawable/latest_c_bg"
+                android:orientation="vertical"
+                android:weightSum="0.64">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_weight="0.07">
+
+                    <RelativeLayout
+                        android:id="@+id/eng_sc_rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/eng_crossbtn"
+                            android:layout_width="@dimen/dp70"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true">
+
+                            <ImageView
+                                android:id="@+id/eng_crossImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_icon_close"></ImageView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/eng_sharebtn"
+                            android:layout_width="@dimen/dp70"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true">
+
+                            <ImageView
+                                android:id="@+id/eng_shareImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_icon_share"></ImageView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ar_sc_rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/ar_crossbtn"
+                            android:layout_width="@dimen/dp70"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true">
+
+                            <ImageView
+                                android:id="@+id/ar_crossImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_icon_close"></ImageView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/ar_sharebtn"
+                            android:layout_width="@dimen/dp70"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true">
+
+                            <ImageView
+                                android:id="@+id/ar_shareImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_icon_share"></ImageView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_weight="0.11"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/coupon_detail_imgs"
+                            android:layout_width="78dp"
+                            android:layout_height="78dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:elevation="5dp"
+                            android:src="@drawable/coupon_icon" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dinnextltarabicbold"
+                        android:text="Max"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.04"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_marginTop="@dimen/_dp5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:nestedScrollingEnabled="true"
+                        android:fillViewport="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/admin_detail_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/dinnextltarabicmedium"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="13sp"
+                                ></TextView>
+                        </RelativeLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="21dp"
+                    android:background="@color/link_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:layout_weight="0.05"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/v"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dinnextltarabicbold"
+                        android:text="@string/discount"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.04"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/discount_tex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dinnextltarabicmedium"
+                        android:text="٢٠٪؜"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="13sp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/dinnextltarabicbold"
+                        android:text="@string/details1"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.17"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_marginTop="@dimen/_dp5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_below="@+id/detail"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:nestedScrollingEnabled="true"
+                        android:fillViewport="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/detail_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/dinnextltarabicmedium"
+                                android:text="الطلب بعد ٨ ساعات من تاريخ يرجع لك ٢٠٪؜ من قيمة الطلب بعد ٨ ساعات من تاريخ الطلبيرجع لك ٢٠٪؜يمة الطلب بعد ٨ ساعات من تاريخ  "
+                                android:textAlignment="center"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="13sp"
+                                ></TextView>
+                        </RelativeLayout>
+                    </ScrollView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp4">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_dp5"
+                                android:fontFamily="@font/dinnextltarabicmedium"
+                                android:text="@string/str_last_used"
+                                android:textColor="@color/ltu_color"
+                                android:textSize="14sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/last_used_coupon_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp5"
+                                android:layout_marginTop="@dimen/_dp5"
+                                android:fontFamily="@font/dinnextltarabicmedium"
+                                android:text="@string/str_ls_lh"
+                                android:textColor="@color/last_used_color"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dp10"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/dp32"
+                        android:layout_marginEnd="@dimen/dp32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/btnLink"
+                                android:background="@drawable/shop_btn"
+                                style="@style/cd_icon_style">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/link_text"
+                                android:text="@string/str_show_now"
+                                style="@style/cd_txt_style">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/fav_press"
+                                android:src="@drawable/ic_favourite_icon"
+                                style="@style/cd_icon_style">
+                            </ImageView>
+                            <TextView
+                                android:text="@string/str_cd_fav"
+                                style="@style/cd_txt_style">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/likeBtn"
+                                android:background="@drawable/like_buttn"
+                                style="@style/cd_icon_style">
+                            </ImageView>
+                            <TextView
+                                android:text="@string/str_like"
+                                style="@style/cd_txt_style">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/dislikeBtn"
+                                android:background="@drawable/dislike_buttn"
+                                style="@style/cd_icon_style">
+                            </ImageView>
+                            <TextView
+                                android:text="@string/str_dislike"
+                                style="@style/cd_txt_style">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.08">
+
+                    <RelativeLayout
+                        android:id="@+id/viewGrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/dp14"
+                        android:layout_marginEnd="@dimen/dp14">
+
+                        <LinearLayout
+                            android:id="@+id/ar_copyBtnClick_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:id="@+id/ar_codeBtn"
+                                android:layout_width="140dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/codebtn">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:id="@+id/copy_code_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:fontFamily="@font/dinnextltarabicbold"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:text="1ME22"
+                                        android:textColor="@color/primary_text"
+                                        android:textSize="17sp"
+                                        android:textStyle="bold"></TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/ar_copyBtn"
+                                android:layout_width="140dp"
+                                android:layout_height="45dp"
+                                android:layout_toRightOf="@+id/codeBtn"
+                                android:background="@drawable/copybtn">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="6dp"
+                                        android:fontFamily="@font/dinnextltarabicbold"
+                                        android:text="@string/copy"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="17sp"
+                                        android:textStyle="bold"></TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/eng_copyBtnClick_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:id="@+id/eng_copyBtn"
+                                android:layout_width="140dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/codebtneng">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:id="@+id/eng_copy_code_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:fontFamily="@font/dinnextltarabicbold"
+                                        android:maxLines="1"
+                                        android:paddingStart="@dimen/dp5"
+                                        android:singleLine="true"
+                                        android:text="eats-mohanda575ue"
+                                        android:textColor="@color/primary_text"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"></TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/eng_codeBtn"
+                                android:layout_width="140dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/copybtneng">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="6dp"
+                                        android:fontFamily="@font/dinnextltarabicbold"
+                                        android:text="@string/copy"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"></TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/copybtn_design"
+                            android:layout_width="260dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:animateLayoutChanges="true"
+                            android:background="@drawable/btndesign"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:id="@+id/eng_copied_lin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/copyt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/dinnextltarabicbold"
+                                    android:text="@string/copied"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"></TextView>
+
+                                <ImageView
+                                    android:id="@+id/check"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/dp10"
+                                    android:src="@drawable/ic_icon_check"></ImageView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ar_copied_lin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_icon_check"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp10"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/dinnextltarabicbold"
+                                    android:text="@string/copied"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"></TextView>
+
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

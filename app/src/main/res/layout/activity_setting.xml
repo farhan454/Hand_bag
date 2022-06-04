@@ -1,0 +1,23 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/llselectalarm"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/cart_bg_blue"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="7dp"
+        android:text="Theme" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:id="@+id/button_color"/>
+
+</LinearLayout>
